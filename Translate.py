@@ -25,4 +25,10 @@ target_language = list(d.keys())[list(d.values()).index(target_language)]
 
 translated_text = translate_text(input_text, target_language)
 
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+
 my_area = st.text_area("My text here :",translated_text)
